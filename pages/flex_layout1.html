@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen-Flexbox Scratchpad</title>
+    <style>
+ * {
+    box-sizing: border-box; 
+  }
+
+  body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .mainContainer{
+      display: flex;
+      flex: 1;
+  }
+  .mainContainer>article{
+flex: 1;
+order: 1;
+  }
+  .mainContainer>nav,
+  .mainContainer>aside{
+      flex:0 0 20vw;
+  }
+  .mainContainer>nav{
+      background: #D7E8D4;
+      order: 3;
+  }
+  .mainContainer>aside{
+      background: beige;
+      order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+    
+</style>
+</head>
+<body>
+    <header class="headerContainer"><h1>HEADER-Sample Flexbox Example</h1></header>
+    <div class="mainContainer">
+    <article>
+        <h2>First article</h2>
+        <p>Tacos actually microdosing, pour-over semiotics ihkhk lkhjkhk kbkbkjh jkbkhkhk kgkgkhkkhkujhkhjk  kjbkhkhkh jknkhnjkb fgyjgjg hmgbkjgjkh mnhhbkjgbjb nb mhbjkkjb  b mbkjbb mnbkjhjb m mjhjmnb nm bkjbmnn b mn mgjhvjhmnb kjjmgvhjnbvjhgvjhb mngb jmgkj hikhkjbkjhjkhjk</p>           
+    </article>
+    <nav>
+        <h2>Second Article</h2>
+        <p>Tacos actually microdosing</p>
+    </nav>
+    <aside>
+        <h2>Third article </h2>
+        <p>Cray food truck bench</p>        
+    </aside>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+</html>
